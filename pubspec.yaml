@@ -1,6 +1,6 @@
 name: ar_view
 description: "A Flutter package for augmented reality with camera integration."
-version: 0.0.2+2
+version: 0.0.3
 homepage: https://github.com/KanyantaM/ar_view
 repository: https://github.com/KanyantaM/ar_view
 issue_tracker: https://github.com/KanyantaM/ar_view/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen

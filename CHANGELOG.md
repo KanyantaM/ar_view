@@ -1,3 +1,3 @@
-## 0.0.2+2
+## 0.0.3
 
-* Accomodating lower flutter versions
+* Allowing users to see issues

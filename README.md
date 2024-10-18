@@ -23,7 +23,7 @@ To get started with the `ar_view` package, follow these steps:
 
    ```yaml
    dependencies:
-     ar_view: ^0.0.1
+     ar_view: ^0.0.3
    ```
 
 3. **Install Packages**:

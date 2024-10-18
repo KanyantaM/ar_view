@@ -7,7 +7,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1+1"
+    version: "0.0.2"
   async:
     dependency: transitive
     description:
@@ -25,7 +25,7 @@ packages:
     source: hosted
     version: "2.1.1"
   camera:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: camera
       sha256: "26ff41045772153f222ffffecba711a206f670f5834d40ebf5eed3811692f167"

@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
 class AugmentedRealityView extends StatefulWidget {
-  final List<CameraDescription>? allCameras;
-  const AugmentedRealityView({super.key, this.allCameras});
+  const AugmentedRealityView({
+    super.key,
+  });
 
   @override
   State<AugmentedRealityView> createState() => _AugmentedRealityViewState();
@@ -19,7 +20,6 @@ class _AugmentedRealityViewState extends State<AugmentedRealityView> {
   @override
   void initState() {
     super.initState();
-    allCameras = widget.allCameras ?? [];
     _initializeCamera();
   }
 
@@ -31,6 +31,12 @@ class _AugmentedRealityViewState extends State<AugmentedRealityView> {
 
   // Initialize the camera
   Future<void> _initializeCamera() async {
+    try {
+      allCameras = await availableCameras();
+    } on CameraException catch (errorMessage) {
+      // Provide more context in error handling
+      debugPrint('Camera error: ${errorMessage.description}');
+    }
     if (allCameras.isNotEmpty) {
       cameraController = CameraController(
         allCameras[0], // Use the first available camera

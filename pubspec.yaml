@@ -1,0 +1,54 @@
+name: ar_view
+description: "A Flutter package for augmented reality with camera integration."
+version: 0.0.1+1
+homepage: https://github.com/KanyantaM/ar_view
+repository: https://github.com/KanyantaM/ar_view
+issue_tracker: https://github.com/KanyantaM/ar_view/issues
+documentation: https://pub.dev/documentation/ar_view/latest/
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.13
+  http: ^1.2.2
+
+# Assets section (uncomment if you plan to add images or other assets)
+# flutter:
+#   assets:
+#     - assets/
+
+# Custom fonts (uncomment if you plan to add fonts)
+#   fonts:
+#     - family: Schyler
+#       fonts:
+#         - asset: fonts/Schyler-Regular.ttf
+#         - asset: fonts/Schyler-Italic.ttf
+#           style: italic
+
+# Maintainer information (required for pub.dev)
+
+
+# License information (ensure this file is included in the root directory)
+# Consider using standard licenses like MIT, BSD, etc.
+# For example, add a LICENSE file with the MIT license:
+# https://choosealicense.com/licenses/mit/
+license: MIT
+
+# Additional metadata for pub.dev (optional but recommended)
+# These tags help your package get discovered
+topics:
+  - flutter
+  - augmented-reality
+  - camera
+  - mobile-development
